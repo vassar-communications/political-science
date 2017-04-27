@@ -1,0 +1,329 @@
+$fontSerif: "freight-text-pro", "Times New Roman", Times, serif;
+$fontSans: "open-sans", sans-serif, Helvetica, Arial, sans-serif;
+
+html {
+  font: 124%/1.44 $fontSans;
+  font-style: normal;
+  font-weight: 400;
+}
+
+abbr[title] {
+  border-bottom: 0; 
+}
+
+address {
+}
+
+blockquote {
+  font-size: 1em;
+  line-height: 1.44;
+  margin: 0 0 1.44em 1.44em; 
+}
+
+cite {
+  font-style: italic;
+  white-space: nowrap; 
+}
+
+dd {
+  margin: 0 0 1em 1em; 
+}
+
+dl {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  line-height: 1.44; 
+}
+
+dt {
+  font-weight: 600; 
+}
+
+h1 {
+  @include header-titles (1, $fontSerif, 500, normal, 0, 0, .335em, 0);
+  @include v-pixel-fallback ('font-size', 2.488rem);
+}
+
+h2 {
+  @include header-titles (1.44, $fontSerif, 500, normal, 0, 0, .335em, 0);
+  @include v-pixel-fallback ('font-size', 2.074rem);
+}
+
+h3 {
+  @include header-titles (1.44, $fontSerif, 500, normal, 0, 0, .335em, 0);
+  @include v-pixel-fallback ('font-size', 1.44rem);
+}
+
+h4 {
+  @include header-titles (1.44, $fontSerif, 700, normal, 0, 0, .335em, 0);
+  @include v-pixel-fallback ('font-size', 1.2rem);
+}
+
+h5 {
+  @include header-titles (1.44, $fontSerif, 700, normal, 0, 0, .335em, 0);
+  @include v-pixel-fallback ('font-size', 1.2rem);
+}
+
+h6 {
+  @include header-titles (1.44, $fontSerif, 700, normal, 0, 0, .279em, 0);
+  @include v-pixel-fallback ('font-size', 1rem);
+}
+
+hr {
+  border: none;
+  width: 100%; 
+}
+
+li ol,
+li ul {
+  margin-top: .579em; 
+}
+
+ol {
+  list-style: decimal; 
+}
+
+ol ol {
+  list-style: lower-alpha; 
+}
+
+ol ol ol {
+  list-style: lower-roman; 
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  font-size: .833em; 
+}
+
+p {
+  margin: 0 0 1.44em; 
+}
+
+table {
+  width: 100%; 
+}
+
+table,
+address {
+  font-size: .833em;
+  margin-bottom: 1.44em; 
+}
+
+td,
+th {
+    font-size: .833em;
+    padding: .279em .579em; 
+}
+
+ul {
+    list-style: circle; 
+}
+
+ul ul {
+    list-style: square; 
+}
+
+ul ul ul {
+  list-style: circle; 
+}
+
+.ac-NavAnchor--menu {
+  @include v-pixel-fallback ('font-size', 1.728rem);
+}
+
+.u-NavSite {
+  font-family: $fontSerif;
+  font-style: normal;
+  font-weight: 700;
+  @include v-pixel-fallback ('font-size', 1.728rem);
+}
+
+.u-NavSite__level--2 {
+  @include v-pixel-fallback ('font-size', 1.2rem);
+  font-weight: 500;
+}
+
+.u-NavSite__level--2 .u-NavSite__item {
+  line-height: 1.2;
+}
+
+.u-Masthead__siteName {
+    @include header-titles (.833, $fontSerif, 500, normal, 0, 0, 0, 0);
+    @include v-pixel-fallback ('font-size', 2.986rem);
+}
+
+.u-Masthead__vassar--link {
+    @include header-titles (1.44, $fontSans, 400, normal, 0, 0, .335em, 0);
+    @include v-pixel-fallback ('font-size', 1rem); 
+}
+
+.u-Masthead__siteName--link,
+.u-Masthead__siteName--link:visited,
+.u-Masthead__vassar--link {
+  border-bottom: none; 
+}
+
+.u-Masthead__vassar--link:before {
+  display:none;
+}
+
+.u-pageTitle {
+  margin-top: 0;
+  line-height: 1.44; 
+}
+
+.u-Bio__contactInfo {
+  font-size: .833em;
+}
+
+.u-Bio__contactItemLabel,
+.u-BioList__name {
+  font-weight: 700; 
+}
+
+.u-Bio__contactData {
+  font-weight: 400; 
+}
+
+.u-Bio__title {
+  font-weight: 500;
+  line-height: 1;
+}
+
+.u-BioList__title {
+  font-style: italic;
+  font-weight: 400; 
+}
+
+.u-BioList__comma {
+  display: none;
+}
+
+.u-VCard--site {
+  font-size: .833em;
+  line-height: 1.728;
+  text-align: center;
+}
+
+.u-VCard__url {
+  @include header-titles (1, $fontSerif, 700, normal, 0, 0, .833em, 0);
+  @include v-pixel-fallback ('font-size', 1rem);
+}
+
+.u-Figure__caption {
+  line-height: 1.3;
+}
+
+.u-Figure__caption--title,
+.u-Figure__caption--artist,
+.u-Figure__caption--description,
+.u-Gallery__link {
+  @include v-pixel-fallback ('font-size', .694rem);
+  border-bottom: 0;
+}
+
+.u-Figure__caption--title,
+.u-Figure__caption--artist,
+.u-Figure__caption--description {
+  font-weight: 400;
+}
+
+.u-Figure__caption--title {
+  font-style: italic;
+}
+
+.u-Gallery__link {
+  line-height: 1;
+}
+
+/* other hacks */
+
+.u-CourseList__heading {
+  @include header-titles (1.44, $fontSerif, 500, normal, 0, 0, .335em, 0);
+  @include v-pixel-fallback ('font-size', 1.44rem);
+}
+
+.u-Course__heading--title,
+.u-Course__units,
+.u-lAside h4 {
+  @include header-titles (1.44, $fontSerif, 700, normal, 0, 0, .335em, 0);
+  @include v-pixel-fallback ('font-size', 1.2rem);
+}
+
+.u-lAside h5 {
+  @include header-titles (1.44, $fontSerif, 700, normal, 0, 0, .279em, 0);
+  @include v-pixel-fallback ('font-size', 1rem);
+}
+
+.u-lAside .u-NewsList__heading--announcements {
+  @include header-titles (1.44, $fontSerif, 700, normal, 0, 0, .335em, 0);
+  @include v-pixel-fallback ('font-size', 1.2rem);
+}
+
+.u-lAside .u-NewsList__itemContainer,
+.u-lAside .all-link {
+  @include v-pixel-fallback ('font-size', .833rem);
+  line-height: 1.4;
+}
+
+.u-lAside .u-NewsList__item,
+.u-lAside .all-link,
+.u-lAside .u-NewsList__heading--announcements a {
+  border-bottom: solid 0px;
+  padding-bottom: 0;
+}
+
+.u-lAside p {
+  @include v-pixel-fallback ('font-size', .833rem); 
+}
+
+.u-Article h3 {
+  line-height: 1.2;
+}
+
+/* News base hacks */
+
+.u-ArticleTeaser__itemContainer,
+.u-ArticleListItem__label--dateline,
+.u-BreadCrumbs--news,
+.u-ArticleNavGroup__navButton {
+  @include v-pixel-fallback ('font-size', .833rem);
+}
+
+.u-ArticleListItem__label--type,
+.u-ArticleListItem__label--dateline__posted,
+.u-ArticleListItem__label--dateline__postedDate {
+  font-weight: 400;
+}
+
+.u-ArticleListItem__title {
+  line-height: 1.2;
+}
+
+.u-BreadCrumbs__item:before {
+  content: "/";
+  padding: 0 5px;
+}
+
+.u-BreadCrumbs__item--root:before {
+  content: "";
+}
+
+@media screen and (min-width: 40em) {
+  .u-NavSite {
+    @include v-pixel-fallback ('font-size', 1.2rem);
+  }
+
+  .u-NavSite__level--2 {
+    @include v-pixel-fallback ('font-size', .833rem);
+  }
+
+  .u-Search__submit {
+    font-size: 1em;
+  }
+  
+}

@@ -1,0 +1,500 @@
+@import "mixins";
+
+$lightPurple: #EEEEF4;
+$medPurple: #9587A5;
+$darkPurple: #08003B;
+$darkGold: #828066;
+
+/* ========================================================================
+ Layout
+ ======================================================================== 
+*/
+
+@media screen {
+    
+    /**
+     * change in basic search styles
+     */
+    
+    .u-Search__cancel {
+        margin-top:.279em;
+        position:static;
+    }
+    
+    .u-Search__field {
+        width:59%;
+    }
+    
+    .u-Search__submit {
+        float:left;
+        margin-right:3%;
+        width:23%;  
+    }
+
+    /**
+     * change in basic search styles
+     */
+     
+   body {
+        padding: 0 5% 5%;
+        position: relative;
+        text-align: left; 
+    }
+
+   p img {
+        float: left;
+        margin: 0 .402em .402em 0;
+        padding: 0; 
+    }
+
+   html {
+        text-align: center; 
+    }
+
+   * {
+        box-sizing: border-box; 
+    }
+
+   .ac-NavAnchor--menu {
+        padding: 0;
+        border-bottom: none;
+        text-align: center; 
+    }
+
+    .ac-NavAnchor--top,
+    .u-Masthead__siteName--link {
+        border-bottom: none; 
+    }
+
+    .ac-NavAnchor--top {
+        display: block;
+        margin: 1em 0;
+    }
+
+    .ac-NavAnchor--menu {
+        left: 0;
+        /* override responsive */
+        position: relative;
+        /* override responsive */
+        top: .402em;
+        z-index: 1; 
+    }
+
+    .u-NewsList__list {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .u-NewsList__itemContainer {
+        padding-bottom: .833em;
+    }
+
+    .u-Bio__name,
+    .u-Bio__title {
+        border-bottom: 0;
+        margin-bottom: 0; 
+    }
+
+   .u-Bio__title {
+        border-bottom: 0;
+        margin-top: 0; 
+    }
+
+   .u-BioList__list {
+        list-style: none;
+        list-style-type: none;
+        margin: 0;
+        padding: 0; 
+    }
+
+    .u-BioList__title {
+      display: block;
+    }
+
+    .u-BioList__item {
+        padding-bottom: .833em;
+    }
+
+   .u-Bio__contactInfo {
+        margin: 1.2em 0; 
+    }
+
+   .u-Bio__contactItem {
+        margin: 0; 
+    }
+
+   .u-lFooter {
+        width: 100%;
+        overflow: hidden;
+        zoom: 1; 
+    }
+
+   .u-lHeader {
+        border-top: solid 3.8em $darkGold;
+        margin-top: -2.074em;
+        margin-left: -5%;
+        overflow: hidden;
+        padding: 0 0 1.5% 5%;
+        position: relative;
+        width: 110%; 
+    }
+
+    .u-lMain {
+        margin: 1.728em 0 2.074em;
+    }
+
+    .u-lAside {
+      padding: 1.2em 0 0 0;
+    }
+
+   .u-Masthead {
+        padding-top: .694em; 
+    }
+
+   .u-Masthead__vassar {
+        float: left;
+        margin-top: .25em; 
+    }
+
+   .u-Masthead__vassar--link {
+        display: block;
+        overflow: hidden; 
+    }
+
+   .u-Masthead__siteName {
+        float: left; 
+    }
+
+   .u-NavSite {
+        float: left;
+        @include v-pixel-fallback ('margin-top', 1.728rem);
+        @include v-pixel-fallback ('margin-bottom', 1.728rem);
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 1.5% 1.5% 0;
+        width: 100%;
+        text-align: left;
+        border-top: 1px solid $darkGold;
+    }
+
+   .u-NavSite__itemContainer {
+        margin: 0; 
+    }
+
+   .u-NavSite__level--1 {
+        float: left;
+        width: 100%; 
+    }
+
+   .u-NavSite__level--2 {
+        margin-top: .335em; 
+    }
+
+   .u-NavSite__level--2 .u-NavSite__item {
+        padding-bottom: .579em;
+    }
+
+   .u-NavSite__level--3 {
+        padding: 0 0 0 .75em; 
+    }
+
+    .u-lFooter {
+        padding: 1.728em 0; 
+    }
+
+   .u-VCard--Person .u-Bio__contactItem {
+        float: none; 
+    }
+
+   .u-VCard--site .u-VCard__info .u-VCard__itemContainer:last-child {
+        float: none;
+        margin-right: 0; 
+    }
+
+    .u-VCard__url {
+      display: inline-block;
+    }
+
+    .u-VCard--site .u-VCard__itemContainer,
+    .u-List__itemContainer {
+        margin-right: 1em; 
+    }
+
+   .u-VCard--site .u-VCard__info {
+        margin: 0; 
+    }
+
+    .galleria {
+        margin: 0 0 1.44em;
+    }
+
+    .u-Figure__caption {
+      margin-top: .279em;
+    }
+
+    .u-Gallery__link {
+      display: block;
+      margin-top: .833em;
+    }
+
+    /* Figures and figcaption
+     ====================== */
+
+    .u-pageHome .u-Gallery__modalThumbnail,
+    .home .u-Gallery__modalThumbnail, {
+        margin:0 0 1.4em;
+    }
+
+    .u-Figure__image {
+    padding: 0;
+    }
+
+    .u-Figure {
+    margin: 0 5% 5% 5%;
+    /* >= 5% as default  */
+    }
+
+    .u-Figure--left {
+    float: left;
+    margin: 2.5% 5% 5% 0;
+    }
+
+    .u-Figure--right {
+    float: right;
+    margin: 2.5% 0 5% 5%;
+    }
+
+    .u-Figure__caption {
+    margin-top: .44em;
+    font-size: .8em;
+    /* optional value */
+    }
+
+    .u-Figure__caption--link {
+    display: block;
+    margin-top: .833em;
+    border-bottom: 0px;
+    }
+
+    .u-Figure__caption--description {
+      display: block;
+      margin-top: .833em;
+    }
+
+    /* 'image-full' in WYSIWYG pull-down menu.
+    No width specified, handled responsively */
+    /* line 228, ../sass/layout.scss */
+    .u-Figure--full {
+    margin-left: 0;
+    margin-right: 0;
+    }
+
+    .u-Figure--center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    /* optional value */
+    }
+
+    .u-Figure--half {
+    width: 45%;
+    /* optional value */
+    }
+
+    .u-Figure--third {
+    width: 28%;
+    /* optional value */
+    }
+
+    .u-Figure--quarter {
+    width: 20%;
+    /* optional value */
+    }
+
+    /* News base overrides */
+
+    .u-News__subTitle {
+        padding-bottom: .279em;
+        margin-bottom: 1em;
+    }
+
+    .u-BreadCrumbs--news {
+        margin-top: -1em;
+        margin-bottom: 2.074em;        
+    }
+
+    .u-BreadCrumbs__item--root:before {
+        padding: 0;
+    }
+
+    .u-ArticleListItem {
+        margin-top: .833em;
+        margin-bottom: 2.074em;
+        padding: 0 0 2.074em;
+        padding-bottom: 2.074em;
+        border-bottom: 1px dotted;
+    }
+
+    .u-ArticleListItem .u-Figure {
+        margin: 0 5% 5% 0;
+    }
+
+    .u-ArticleListItem__label {
+        padding: 0;
+        margin: 0;
+    }
+
+    .u-ArticleNavGroup {
+        margin-top: 2.074em;
+        margin-bottom: 2.074em;
+    }
+
+    .aside-block ul {
+        margin-bottom: 2.074em;
+        padding-bottom: 2.074em;
+    }
+
+    ul.u-ArticleTeaserList {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .u-ArticleTeaser__itemContainer {
+        margin-bottom: .694em;
+    }
+
+    .u-ArticleTeaserList,
+    .aside-block ul {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;        
+    }
+
+    .u-ArticleListItem__thumbnail {
+        float: left;
+        margin: 0 .833em .833em 0;
+    }
+
+}
+
+@media screen and (min-width: 30em) {
+    .u-Masthead__siteName {
+        margin-right: 5%; 
+    }
+
+   .u-Masthead__vassar {
+        margin-right: .402em; 
+    }        
+}
+     
+@media screen and (min-width: 40em) {
+   
+    body {
+        width: 90%;
+        margin: 1.5% 5% 0; 
+    }
+
+   html {
+        margin: 1.5% 0 3.375%;
+        padding-top: 2.25%; 
+    }
+
+   .ac-NavAnchor {
+        display: none; 
+    }
+
+   .u-lAside {
+        float:right;
+        padding:0 0 0 1.5%;
+        width:24%;
+    }
+    
+    .u-lContent {
+        float:left;
+        padding:0 1.5%;
+        width:73%;      
+    }
+    
+    .u-lHeader {
+        border-top: none;
+        margin-left: 0;
+        padding-left: 0;
+        padding-top: 2.25em;
+        width: 100%; 
+    }
+
+   .u-lMain {
+        float: right;
+        width: 84%; 
+    }
+
+   .u-Masthead__vassar {
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+   .u-NavSite {
+        width: 15%;
+        border-top: none;
+    }
+     
+     /**
+ * This block could be centralized if we can pass a width parameter
+ */
+
+    #search {
+        background-color:transparent;
+        max-height: 100%;
+        overflow: visible;
+        position:static;
+    }
+    
+        #search:target {
+            position:static;
+            width: auto;
+            *position:absolute;
+        }
+        
+    .u-Search {
+        position: absolute;
+        top: 1em;
+        right:5.5%;
+    }
+
+    .u-Search__button,
+    .u-Search__cancel {
+         display:none;
+    }
+    
+    .u-Search__field {
+        font-size:1em;
+        height:1.5em;
+        line-height:1;
+        width: 80%;
+    }
+    
+    .u-Search__submit {
+        font-size:1em;
+        height:1.5em;
+        font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        line-height:1;
+        margin-top:0;
+        margin-right: 0;
+        width: 20%;
+}
+
+/**
+ * This block could be centralized if we can pass a width parameter
+ */
+}
+
+@media screen and (min-width: 70em) {
+   
+    html {
+        max-width: 70em;
+        margin-left: auto;
+        margin-right: auto; 
+    } 
+}

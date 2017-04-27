@@ -1,0 +1,192 @@
+$lightPurple: #EEEEF4;
+$medPurple: #9587A5;
+$darkPurple: #08003B;
+$darkGold: #828066;
+
+.ac-skipLink:active,
+.ac-skipLink:focus {
+    background: none repeat scroll 0 0 $darkPurple;
+}
+
+a {
+  padding-bottom: 1px;
+  text-decoration: none;
+  /*link-colors($normal, $hover, $active, $visited, $focus)*/
+  @include link-colors($darkPurple, $darkGold, $darkPurple, $darkPurple, $darkGold);
+  border-bottom: dotted 1px $darkPurple;
+  transition: all .23s ease-in-out;
+}
+
+a:active,
+a:hover,
+a:visited:hover {
+  border-bottom-color: $darkGold;
+}
+
+body {
+}
+
+html {
+  background: #fff url(../images/css/map-bg-hobo-dyer.png) no-repeat center center fixed;
+  background-size: cover;
+  color: $darkPurple; 
+}
+
+h1 {
+  color: $darkPurple; 
+}
+
+h2,
+h3 {
+  color: $darkPurple; 
+}
+
+h4,
+h5,
+H6,
+caption {
+  color: $darkPurple; 
+}
+
+hr {
+  border-top: 1px dotted $darkGold;
+}
+
+table {
+  border-top: 1px solid $darkGold;
+  border-left: 1px solid $darkGold; 
+}
+
+td,
+th {
+  border-right: 1px solid $darkGold;
+  border-bottom: 1px solid $darkGold; 
+}
+
+th {
+  background: $lightPurple; 
+}
+
+.u-lAside {
+  border: solid $darkGold;
+  border-width: 1px 0 0 0;
+}
+
+.ac-skipLink,
+.ac-NavAnchor--menu,
+.u-Search__button,
+.u-Search__submit,
+.u-Search__cancel {
+  /*link-colors($normal, $hover, $active, $visited, $focus)*/
+  @include link-colors(#fff, #fff, #fff, #fff, #fff);
+}
+
+.u-Search__field {
+  border: solid 1px $darkGold;
+}
+
+.u-Search__submit {
+  background-color:$darkGold;
+}
+
+.u-lHeader {
+  border-bottom: 5px double $darkGold; 
+}
+
+.u-lFooter {
+  border-top: 1px solid $darkGold;
+}
+
+.u-Masthead__siteName--link,
+.u-VCard__url {
+  /*link-colors($normal, $hover, $active, $visited, $focus)*/
+  @include link-colors($darkGold, $darkPurple, $darkPurple, $darkGold, $darkPurple); 
+}
+
+.u-NavSite__item {
+  border-bottom: 0px dotted;
+  /*link-colors($normal, $hover, $active, $visited, $focus)*/
+  @include link-colors($darkPurple, $darkGold, $darkGold, $darkPurple, $darkPurple); 
+}
+
+.u-NavSite__item--isOpen,
+.u-NavSite__item--isOpen .u-NavSite__level--2 .u-NavSite__item {
+  color: $medPurple; 
+}
+
+.u-NavSite__item--isCurrent,
+.u-NavSite__item--isCurrent:visited {
+  color: $medPurple; 
+}
+
+#search {
+  background-color: $darkGold;
+}
+
+  /* News base overrides */
+
+  .u-ArticleListItem:hover {
+    background:transparent;
+  }
+
+  .u-News__subTitle {
+    background: transparent;
+    border-bottom: 1px dotted;
+  }
+
+  .u-ArticleListItem--expired {
+    background: transparent;
+    border-bottom: 1px dotted;
+  }
+
+  .u-ArticleListItem--expired:hover {
+    background: transparent;
+  }
+
+  .u-ArticleNavGroup__navButton {
+    /*link-colors($normal, $hover, $active, $visited, $focus)*/
+    @include link-colors(white, $darkPurple, white, white, $darkPurple);
+    background-color:$darkPurple;
+  }
+
+  .u-ArticleNavGroup__navButton:hover {
+    background-color:$medPurple;
+  }
+
+  .u-ArticleNavGroup__navButton--more:before,
+  .u-ArticleNavGroup__navButton--more:after,
+  .u-ArticleNavGroup__navButton--archive:before,
+  .u-ArticleNavGroup__navButton--archive:after {
+    content: "";
+  }
+
+  .icon-envelope {
+    display: none;
+  }
+
+  @media screen and (min-width: 40em) {
+
+    .u-lAside {
+      border-width: 0;
+    }
+
+    .u-Search__field {
+      border: solid 0;
+    }
+
+    #search {
+      background-color: white;
+    }
+
+    .u-Search__submit {
+      background-color: transparent;
+      /*link-colors($normal, $hover, $active, $visited, $focus)*/
+      @include link-colors($darkGold, $darkPurple, $darkGold, $darkGold, $darkPurple);
+      transition: all .23s ease-in-out;
+    }
+
+    .u-Search {
+      border: 1px solid $darkGold;
+    }
+
+  }
