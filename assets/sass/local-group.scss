@@ -1,5 +1,7 @@
-@import "_config";
-@import "typography";
-@import "layout";
-@import "color";
-@import "google-search-default";
+@import "PATH_CENTRAL_SASS/_config";
+@import "_local-config";
+@import "PATH_CENTRAL_SASS/local-group";
+@import "_typography";
+@import "_layout";
+@import "_color";
+@import "_google-search-default";
