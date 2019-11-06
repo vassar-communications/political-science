@@ -291,8 +291,8 @@ $mobileMenuLinkColorVisited: #fff;
 
 /* Don't modify these */
 
-$ms-base: 1em;
-$ms-ratio: $major-third;
+//$ms-base: 1em;
+//$ms-ratio: $major-third;
 
 @mixin header-titles($lineheight, $family, $weight, $style, $mrgtp, $mrgrt, $mrgbt, $mrglt) {
   font-family: #{$family};
